@@ -1,43 +1,30 @@
-# Topic Modeling
+Project Overview
+The goal of this project was to gather financial insights and articles from four investment management firms (PIMCO, Capital Group, Vanguard, and JPMorgan) and store them for use in a natural language processing (NLP) app. The app would allow users to interact with the insights and articles in a variety of ways, such as personalized recommendations, topic search, or sentiment analysis.
 
-This repository contains example code for performing topic modeling on a corpus of text documents. The code is written in Python and uses the Gensim library for topic modeling.
+Data Gathering
+To gather the relevant insights and articles from each firm, we first identified the web pages that contained the information we were interested in. For each firm, we crawled a set of pages that included market commentaries, research reports, and other types of financial analysis.
 
-### Installation
-To use this code, you will need to have Python 3 installed on your computer. <br>
-You can download Python from the official website: https://www.python.org/downloads/
+We used a combination of web scraping tools and custom scripts to extract the text and metadata from the pages, and stored the results in a database for further processing.
 
-You will also need to install the Gensim library.<br>
-You can install it using pip, a package manager for Python. Open a terminal and run the following command:
-```
-pip install gensim
-```
+Data Cleaning
+After gathering the data, we pre-processed it to remove any irrelevant or redundant information. This included removing boilerplate text (such as copyright notices or legal disclaimers), and filtering out pages that did not contain any substantive financial analysis.
 
-### Usage
-The main file for performing topic modeling is **topic_modeling.py**.<br>
-You can run it from the command line using the following command:
-```
-python topic_modeling.py <path-to-corpus>
-```
-Replace <path-to-corpus> with the path to your corpus of text documents.<br>
-The corpus should be in plain text format, with one document per line.
+We also performed some basic text normalization tasks, such as removing stop words and stemming the remaining words to reduce the dimensionality of the data.
 
-The code will perform the following steps:
+Data Storage
+The cleaned and pre-processed data was then stored in a database for use in the NLP app. We chose a database schema that allowed us to store the text, metadata, and other relevant information (such as author, date, and topic) for each article.
 
-1- Load the corpus of text documents.<br>
-2- Preprocess the documents by tokenizing, removing stop words, and stemming the words.<br>
-3- Build a dictionary of all the unique words in the corpus.<br>
-4- Build a bag-of-words representation of each document.<br>
-5- Train a Latent Dirichlet Allocation (LDA) model using the bag-of-words representations.<br>
-6- Print the top 10 topics and their most representative words.
+We also built a web interface that allowed us to search and filter the stored data by various criteria, such as date range, author, or keyword.
 
-### Example
-To run the example code, clone this repository and navigate to the example directory.<br>
-Then run the following command:
-```
-python topic_modeling.py corpus.txt
-```
+NLP Analysis
+With the data stored in a database, we were able to apply a range of NLP techniques to extract insights and trends from the articles. This included text classification, sentiment analysis, and topic modeling.
 
-This will perform topic modeling on the corpus.txt file, which contains a collection of news articles. The output will show the top 10 topics and their most representative words.
+We used pre-built libraries and tools for most of the NLP tasks, such as scikit-learn for classification and gensim for topic modeling. We also experimented with different techniques and parameter settings to optimize the performance of the NLP models.
 
-### License
-This code is licensed under the MIT License. See the LICENSE file for more information.
+App Development
+The final stage of the project was to build the NLP app itself. We chose to use the Streamlit framework, which allowed us to quickly develop a user-friendly and interactive app that could be accessed through a web browser.
+
+The app included features such as personalized recommendations based on user preferences, sentiment analysis of individual articles, and topic search. We also included visualizations to help users better understand the data, such as word clouds and bar charts.
+
+Conclusion
+This project demonstrated the application of NLP techniques to financial analysis, and showed how a diverse set of insights and articles from multiple investment management firms could be used to gain valuable insights and trends. The resulting NLP app provided a user-friendly and intuitive interface for users to explore the data and make informed investment decisions.
