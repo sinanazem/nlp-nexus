@@ -1,0 +1,4 @@
+loguru==0.7.0
+youtube-transcript-api==0.6.0
+deep-translator==1.11.1
+pytube==15.0.0
