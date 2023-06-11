@@ -1,0 +1,4 @@
+spacy==3.5.2
+loguru==0.7.0
+librosa==
+whisper==
