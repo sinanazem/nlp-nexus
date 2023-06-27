@@ -51,3 +51,8 @@ class YouTubeDownoader:
         elif return_lang == 'fa':
             dt_obj = GoogleTranslator(source='auto', target='fa')
             return [dt_obj.translate(text['text'])  for text in transcript_lst]
+
+if __name__ == "__main__":
+    yt_obj = YouTubeDownoader("https://www.youtube.com/watch?v=TR1GUDj9FFE")
+    data = yt.get_transcript()
+    print(data[:5])
