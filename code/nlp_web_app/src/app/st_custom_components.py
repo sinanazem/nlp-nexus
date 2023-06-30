@@ -36,3 +36,4 @@ def st_audiorec():
 
     return wav_bytes
 
+print(os.path.dirname(os.path.abspath(__file__)))
