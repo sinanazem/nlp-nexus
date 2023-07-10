@@ -1,5 +1,5 @@
 # NLP Nexus
-<img src="https://prominentpixel.com/assets/images/shape/hire-hadoop.svg">
+
 NLP Nexus is a comprehensive natural language processing (NLP) toolkit that combines various NLP functionalities into a single, unified platform. This project aims to provide developers and researchers with a powerful tool for working with text data, including tasks such as text summarization, topic modeling, named entity recognition (NER), translation, and speech-to-text conversion.
 ## Features
 - **Text Summarization**: Generate concise summaries of textual content using state-of-the-art algorithms and techniques.
