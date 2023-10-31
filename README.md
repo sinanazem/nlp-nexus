@@ -35,3 +35,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 If you have any questions, suggestions, or feedback, please feel free to reach out to us at sinanazemm@gmail.com.
+
+<hr>
