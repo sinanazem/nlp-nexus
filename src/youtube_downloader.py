@@ -33,7 +33,7 @@ class YouTubeDownoader:
         except:
             logger.info("Failed to download video")
 
-        logger.info("video was downloaded successfully")
+        logger.info("video was downloaded successfully!")
 
     def get_transcript(self, return_lang='en'):
 
@@ -51,6 +51,7 @@ class YouTubeDownoader:
         elif return_lang == 'fa':
             dt_obj = GoogleTranslator(source='auto', target='fa')
             return [dt_obj.translate(text['text'])  for text in transcript_lst]
+
 
 if __name__ == "__main__":
     yt_obj = YouTubeDownoader("https://www.youtube.com/watch?v=TR1GUDj9FFE")
