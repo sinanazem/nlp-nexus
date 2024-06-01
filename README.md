@@ -13,7 +13,7 @@ NLP Nexus is a comprehensive natural language processing (NLP) toolkit that comb
 
 Clone the repository:
 ```
-git clone https://github.com/your-username/nlp-nexus.git
+git clone https://github.com/sinanazem/nlp-nexus.git
 ```
 2- Install the required dependencies:
 ```
