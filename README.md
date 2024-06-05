@@ -28,10 +28,8 @@ python main.py
 Once the application is running, you can access the various NLP functionalities through a user-friendly interface. Simply follow the prompts or refer to the documentation for detailed instructions on how to utilize each feature.
 
 ## Contributing
-Contributions to NLP Nexus are welcome! If you'd like to contribute new features, enhance existing functionality, or fix any issues, please submit a pull request. Be sure to follow the guidelines outlined in the CONTRIBUTING.md file.
-
-## License
-This project is licensed under the MIT License.
+Contributions to NLP Nexus are welcome! If you'd like to contribute new features, enhance existing functionality, or fix any issues, please submit a pull request. Be sure to follow the guidelines outlined in the CONTRIBUTING.md file
+<hr>
 
 ## Contact
 If you have any questions, suggestions, or feedback, please feel free to reach out to us at sinanazemm@gmail.com.
